@@ -21,8 +21,10 @@ Unsurprinsingly, the solution taken is not too complex, but certainly functional
 
 ## Motivation for sharing
 
-The main goal of sharing this implemention with the Open Source Community is to turn this reference arquitecture into a repeatable and reusable solution for whomever needs it.
+The main goal of sharing this implemention with the Open Source Community is to turn this reference arquitecture into a repeatable and reusable solution for whomever needs it as, we've currently been copying an adapting the code base on per use case but, haven't yet structured it as a common shareable component.
 
 The possible goal list might include:
 * Packing basic pieces of Java code as Lambda Layers
 * Writing a CloudFormation template for ease of deployment
+* Templating for report output
+* Websockets for report completion trigger
