@@ -15,4 +15,4 @@ Unsurprinsingly, the solution taken is not too complex, but certainly functional
  4. A separate Lambda (f2) is trigggered on a per SMS message to process each item's data and each chunk is written to a 
  row on a temporay storage (TTL set to a few hours) in a DynamoDB table.
  5. Every successful execution of Lambda f2 decrements a pending task counter and, when counter reaches zero, a final Lambda (f3) is invoked
- 6. Function f3 gathers all chunks written to DynamoDB, consolidates them in the desired output format and writes it into a an S3 bucket using the report ID as part of the object keyffd.
+ 6. Function f3 gathers all chunks written to DynamoDB, consolidates them in the desired output format and writes it into a an S3 bucket using the report ID as part of the object key.
