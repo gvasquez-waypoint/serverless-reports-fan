@@ -16,7 +16,7 @@ Unsurprisingly, the solution taken is not too complex but certainly functional. 
  3. Report generation is split based on the above list to partially gather the data for each asset/item separately by sending an SNS with the specific parameters for each "sub-report".
  4. A separate Lambda (f2) is triggered on a per SNS message to process each item's data, and each chunk is written to a 
  row on temporary storage (TTL set to a few hours) in a DynamoDB table.
- 5. Every successful execution of Lambda f2 decrements a pending task counter, and when the counter reaches zero, a final Lambda (f3) is invoked
+ 5. Every successful execution of Lambda f2 atomically decrements a pending task counter, and when the counter reaches zero, a final Lambda (f3) is invoked
  6. Function f3 gathers all chunks written to DynamoDB, consolidates them in the desired output format and writes them into an S3 bucket using the report ID as part of the object key.
 
 ## Motivation for sharing
