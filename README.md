@@ -28,3 +28,6 @@ The possible goal list might include:
 * Writing a CloudFormation template for ease of deployment
 * Templating for report output
 * Websockets for report completion trigger
+
+## Block diagram
+![Diagram](diagram.svg)
