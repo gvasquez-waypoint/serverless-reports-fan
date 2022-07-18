@@ -21,7 +21,7 @@ Unsurprisingly, the solution taken is not too complex but certainly functional. 
 
 ## Motivation for sharing
 
-The main goal of sharing this implementation with the Open Source Community is to turn this reference architecture into a repeatable and reusable solution for whoever needs it; we've currently been copying and adapting the code base on per use case but haven't yet structured it as a common shareable component.
+The main goal of sharing this implementation with the Open Source Community is to turn this reference architecture into a repeatable and reusable solution for whoever needs it; we've been copying and adapting the code base on per use case but haven't yet structured it as a common shareable component.
 
 The possible goal list might include:
 * Packing essential pieces of Java code as Lambda Layers
