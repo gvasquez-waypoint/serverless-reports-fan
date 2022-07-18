@@ -30,4 +30,4 @@ The possible goal list might include:
 * Websockets for report completion trigger
 
 ## Block diagram
-![Diagram](diagram.svg)
+![Diagram](diagram.png)
